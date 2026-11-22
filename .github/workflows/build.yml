@@ -1,4 +1,4 @@
-name: Build APK
+​name: Build APK
 ​on:
 push:
 workflow_dispatch:
@@ -16,7 +16,7 @@ java-version: 17
 run: unzip -o ToolBox.zip
 ​- name: Build debug APK
 run: |
-chmod +x gradlew
+chmod: +x gradlew
 ./gradlew assembleDebug --no-daemon
 ​- uses: actions/upload-artifact@v4
 with:
